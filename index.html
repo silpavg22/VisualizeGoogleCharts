@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+   <style>
+  form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+ .inputstyle {
+  margin-bottom:2%;
+  margin-top:3%;
+  margin-left:3%;
+}
+
+ .inputstyle1 {
+  margin-bottom:5%;
+  margin-top:5%;
+  width:25%;
+}
+
+.divstyle {
+  border: 1px solid black;
+  margin: 1rem;
+  align:center;
+}
+
+.div{
+max-width: 600px;
+border: 1px solid black;
+margin: auto;
+margin-bottom: 2%;
+}
+
+
+</style>
+  <body>
+    <h2> Silpa Vijayan Geetha(1001989441)</h2>
+  <h2 align="center">Assignment 4</h2>
+
+            <form class="piechart" action="/piechart" method="GET" enctype="multipart/form-data"
+                  style="margin:auto;max-width:600px">
+                <b>1. Piechart: Magnitude Range and total no of earthquakes</b>
+                <button type="submit">Show</i></button>
+            </form>
+            <br>
+            <form class="barchart" action="/barchart" method="GET" enctype="multipart/form-data"
+                  style="margin:auto;max-width:600px">
+                <b>2. Barchart: Magnitude against Depth</b><br>
+                                Enter no of rows<input type="text"  name="noofrows" class="inputstyle">
+
+                <button type="submit">Show</i></button>
+            </form>
+            <form class="scatterchart" action="/scatterchart" method="GET" enctype="multipart/form-data"
+                  style="margin:auto;max-width:600px">
+                <b>3. Scatterchart: Magnitude against Depth</b><br>
+                Enter no of rows<input type="text"  name="noofrows" class="inputstyle">
+                <button type="submit">Show</i></button>
+            </form>
+            <form class="columnchart" action="/columnchart" method="GET" enctype="multipart/form-data"
+                  style="margin:auto;max-width:600px">
+                <b>4. Column Chart: Magnitude against Depth</b><br>
+                Enter no of rows<input type="text"  name="noofrows" class="inputstyle">
+                <button type="submit">Show</i></button>
+            </form>
+
+  <form class="scatterchartcus" action="/scatterchartcus" method="GET" enctype="multipart/form-data"
+                  style="margin:auto;max-width:600px">
+                <b>5. Scatter Chart for total votes against year</b><br>
+                Enter from year<input type="text"  name="from_year" class="inputstyle"><br>
+                Enter to year<input type="text"  name="to_year" class="inputstyle"><br>
+                Enter state code<input type="text"  name="statecode" class="inputstyle">
+
+                <button type="submit">Show</i></button>
+            </form>
+
+   <form class="barchartcus" action="/barchartcus" method="GET" enctype="multipart/form-data"
+                  style="margin:auto;max-width:600px">
+                <b>6. Bar Chart for candidates each year</b><br>
+                Enter from year<input type="text"  name="from_year" class="inputstyle"><br>
+                Enter to year<input type="text"  name="to_year" class="inputstyle"><br>
+                Enter state code<input type="text"  name="statecode" class="inputstyle">
+
+                <button type="submit">Show</i></button>
+            </form>
+
+  <form class="linechart" action="/linechart" method="GET" enctype="multipart/form-data"
+                  style="margin:auto;max-width:600px">
+                <b>7. Line Chart for total votes against year</b><br>
+                Enter from year<input type="text"  name="from_year" class="inputstyle"><br>
+                Enter to year<input type="text"  name="to_year" class="inputstyle"><br>
+                Enter state code<input type="text"  name="statecode" class="inputstyle">
+
+                <button type="submit">Show</i></button>
+            </form>
+
+  <form class="linechart" action="/piechartcus" method="GET" enctype="multipart/form-data"
+                  style="margin:auto;max-width:600px">
+                <b>8. Pie Chart for total votes against year</b><br>
+                Enter year<input type="text"  name="year" class="inputstyle"><br>
+                Enter state code<input type="text"  name="statecode" class="inputstyle">
+
+                <button type="submit">Show</i></button>
+            </form>
+  </body>
+</html>
